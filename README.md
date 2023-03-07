@@ -31,12 +31,13 @@
 1. first define macros `S2P_MOVETO(x,y)` and `S2P_LINETO(x,y)`
    - these define what to do when the library has extracted polyline vertices
    - you can write to your own data structure, print, or control a machine, etc.
+   - when not overwritten, these macros by default print the vertices to stdout.
 2. (optional) define macro `S2P_SETDIM(w,h)`
    - this define what to do when the width/height of the svg are extracted
    - e.g. you might scale all subsequent vertices
 3. `#include "svg2pl.c"`
-4. (optional) call s2p_def_tag to register parsers for custom tags (e.g. `<text`)
-5. call s2p_parse_from_file OR `s2p_parse_from_str` OR `s2p_parse (FILE*)`
+4. (optional) call `s2p_def_tag` to register parsers for custom tags (e.g. `<text`)
+5. call `s2p_parse_from_file` OR `s2p_parse_from_str` OR `s2p_parse (FILE*)`
 
 
 ## notes:
