@@ -42,6 +42,6 @@
 
 ## notes:
    - I use this library to control an axidraw plotter from a microcontroller, which reads svg files from an SD card -- a project I'll soon publish.
-   - examples/hershey_text.c is a demo for adding custom parsers for text tags using hershey font. It is simplistic and only supports x, y, font-size, and an ascii string as content -- leaving out font styles, tspans, and all the other crazy stuff you can do in svg text -- it's just intended for showing how easily you can extend or customize svgpl to support the features you need.
+   - examples/hershey_text.c is a demo for adding custom parsers for text tags using hershey font. It is simplistic and only supports x, y, font-size, and an ascii string as content -- leaving out font styles, tspans, and all the other crazy stuff you can do in svg text -- it's just intended for showing how easily you can extend or customize svg2pl to support the features you need.
    - see the Makefile for more examples / usage hints
 
